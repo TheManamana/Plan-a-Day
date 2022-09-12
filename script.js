@@ -38,7 +38,8 @@ function createHour(){
     button1.attr('type', 'button');
     button1.attr('id', 'button-addon2');
 
-    // span1.attr('id', 'inputGroup-sizing-default');
+    span1.css("width","65px");
+    
     
     
     if (i+9 > 12){

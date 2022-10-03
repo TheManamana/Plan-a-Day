@@ -10,7 +10,7 @@ var textAreaEls = [];
 var time = moment().format('LLLL');
 $("#currentDay").text(time);
 
-var timeHour = moment().format('HH') - 4;
+var timeHour = moment().format('HH');
 // console.log(timeHour);
 
 // var testArray = ['Test 1', 'Test 2', 'Test 3', 'Test 4', 'Test 5', 'Test 6', 'Test 7', 'Test 8', 'Test 9'];
@@ -18,6 +18,11 @@ var timeHour = moment().format('HH') - 4;
 // localStorage.setItem('todo', JSON.stringify(testArray));
 
 var todoArray = JSON.parse(localStorage.getItem("todo"));
+
+if (todoArray === null){
+    todoArray = [""];
+
+}
 
 function createHour() {
 
